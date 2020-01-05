@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../scripts/jquery-1.12.4.js"></script>
+</head>
+<body>
+<div id="div1" style="font-family: Aharoni;color: #ff3300"></div>
+<div id="div2" style="font-family: Aharoni;color:green"></div>
+</body>
+<script>
+    var a="杨根城根朱国武宴腾飞陈根朱国武宴腾飞王杰吴坤僧陈磊吴坤僧杨根城根朱国武宴腾飞";
+    var index=0;
+    var index2=0;
+    function goword() {
+        $("#div1").html(a.substring(0,index++));
+        if(index==40){
+            index=0;
+        }
+    }
+    function goword2() {
+        $("#div2").html(a.substring(0,index2++));
+        if(index2==40){
+            index2=0;
+        }
+    }
+
+    setInterval(goword,800);
+    setInterval(goword2,700);
+
+</script>
+</html>
